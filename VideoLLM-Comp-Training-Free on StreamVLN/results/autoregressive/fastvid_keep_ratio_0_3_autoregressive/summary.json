@@ -1,0 +1,38 @@
+{
+  "metric": "offline_action_micro_accuracy_min_len",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/latest_suite/autoregressive_80",
+  "num_episodes_eval": 80,
+  "num_episodes_success": 80,
+  "num_episodes_error": 0,
+  "num_actions_compared": 5531,
+  "num_actions_correct": 3394,
+  "overall_action_acc": 0.6136322545651781,
+  "per_class_action_acc": {
+    "0": 0.1,
+    "1": 0.8208530805687204,
+    "2": 0.39316239316239315,
+    "3": 0.2939068100358423
+  },
+  "per_class_total": {
+    "0": 80,
+    "1": 3165,
+    "2": 1170,
+    "3": 1116
+  },
+  "elapsed_seconds": 620.3299896717072,
+  "model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "token_pruning_flags": "{\"enable_video_token_compressor\": true, \"video_token_compressor_type\": \"fastvid\", \"video_token_target_keep_ratio\": 0.3, \"fastvid_retention_ratio\": 0.3, \"fastvid_dyseg_c\": 8, \"fastvid_dyseg_tau\": 0.9, \"fastvid_stprune_d\": 0.4, \"fastvid_dtm_p\": 4, \"fastvid_dtm_beta\": 0.6, \"fastvid_score_type\": \"attn_proxy\", \"enable_sliding_kv\": false, \"enable_memory_loss\": false, \"enable_voxel_proxy\": false, \"enable_token_selection\": false, \"enable_dynamic_memory\": false, \"enable_multiscale_memory\": false, \"enable_voxel_rgbd\": false, \"enable_hc_st_pruning\": false, \"enable_tuning_free_mm_pruning\": false, \"enable_tome_visual_merge\": false}",
+  "avg_visual_tokens_per_step": 29.5,
+  "avg_memory_tokens_per_step": 21.40928270042194,
+  "avg_total_tokens_per_step": 121.04571026722925,
+  "token_reduction_ratio_vs_baseline": 0.6505630830466351,
+  "fps": 8.916222159317385,
+  "latency_ms_mean": 132.3411499106544,
+  "latency_ms_p50": 123.85397788602859,
+  "latency_ms_p95": 215.3458012966439,
+  "approx_tflops_per_step": 2.263879787567531,
+  "gpu_peak_allocated_mib": 16645.9609375,
+  "gpu_peak_reserved_mib": 21176.0,
+  "gpu_device_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda_visible_devices": "0"
+}

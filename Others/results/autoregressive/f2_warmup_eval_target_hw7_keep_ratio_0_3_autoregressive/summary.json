@@ -1,0 +1,38 @@
+{
+  "metric": "offline_action_micro_accuracy_min_len",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/phase0_20260421_230201/autoregressive_80",
+  "num_episodes_eval": 80,
+  "num_episodes_success": 79,
+  "num_episodes_error": 1,
+  "num_actions_compared": 5484,
+  "num_actions_correct": 3279,
+  "overall_action_acc": 0.5979212253829321,
+  "per_class_action_acc": {
+    "0": 0.05063291139240506,
+    "1": 0.8703821656050955,
+    "2": 0.20618556701030927,
+    "3": 0.2742960944595822
+  },
+  "per_class_total": {
+    "0": 79,
+    "1": 3140,
+    "2": 1164,
+    "3": 1101
+  },
+  "elapsed_seconds": 587.7345690727234,
+  "model_path": "/home/ubuntu/project/StreamVLN/experiments_ext/token_pruning_stageF_runs/20260419_164637/checkpoints/combo_hcst_kr072_hw7_f2_warmup",
+  "token_pruning_flags": "{\"enable_sliding_kv\": false, \"enable_memory_loss\": false, \"enable_voxel_proxy\": false, \"enable_token_selection\": false, \"enable_dynamic_memory\": false, \"enable_multiscale_memory\": false, \"enable_voxel_rgbd\": false, \"enable_hc_st_pruning\": true, \"hc_st_keep_ratio\": 0.3, \"hc_st_min_tokens\": 64, \"hc_st_history_window\": 7, \"hc_st_recent_boost\": 1.2, \"enable_tuning_free_mm_pruning\": true, \"mm_prune_visual_keep_ratio\": 0.3, \"mm_prune_text_keep_ratio\": 0.4, \"mm_prune_visual_score_type\": \"l2\", \"mm_prune_text_score_type\": \"l2\", \"mm_prune_keep_special_tokens\": true, \"enable_tome_visual_merge\": false}",
+  "avg_visual_tokens_per_step": 32.0,
+  "avg_memory_tokens_per_step": 20.0,
+  "avg_total_tokens_per_step": 110.94277329420396,
+  "token_reduction_ratio_vs_baseline": 0.6797284218284415,
+  "fps": 9.330742632090162,
+  "latency_ms_mean": 128.70769407589907,
+  "latency_ms_p50": 82.71396555937827,
+  "latency_ms_p95": 165.02512861043215,
+  "approx_tflops_per_step": 1.9447949237237454,
+  "gpu_peak_allocated_mib": 16643.31640625,
+  "gpu_peak_reserved_mib": 20650.0,
+  "gpu_device_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda_visible_devices": "0"
+}

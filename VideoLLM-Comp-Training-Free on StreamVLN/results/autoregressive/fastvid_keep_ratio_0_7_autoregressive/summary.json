@@ -1,0 +1,38 @@
+{
+  "metric": "offline_action_micro_accuracy_min_len",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/latest_suite/autoregressive_80",
+  "num_episodes_eval": 80,
+  "num_episodes_success": 80,
+  "num_episodes_error": 0,
+  "num_actions_compared": 5531,
+  "num_actions_correct": 3392,
+  "overall_action_acc": 0.6132706563008498,
+  "per_class_action_acc": {
+    "0": 0.15,
+    "1": 0.8157977883096367,
+    "2": 0.3905982905982906,
+    "3": 0.3055555555555556
+  },
+  "per_class_total": {
+    "0": 80,
+    "1": 3165,
+    "2": 1170,
+    "3": 1116
+  },
+  "elapsed_seconds": 634.3277034759521,
+  "model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "token_pruning_flags": "{\"enable_video_token_compressor\": true, \"video_token_compressor_type\": \"fastvid\", \"video_token_target_keep_ratio\": 0.7, \"fastvid_retention_ratio\": 0.7, \"fastvid_dyseg_c\": 8, \"fastvid_dyseg_tau\": 0.9, \"fastvid_stprune_d\": 0.4, \"fastvid_dtm_p\": 4, \"fastvid_dtm_beta\": 0.6, \"fastvid_score_type\": \"attn_proxy\", \"enable_sliding_kv\": false, \"enable_memory_loss\": false, \"enable_voxel_proxy\": false, \"enable_token_selection\": false, \"enable_dynamic_memory\": false, \"enable_multiscale_memory\": false, \"enable_voxel_rgbd\": false, \"enable_hc_st_pruning\": false, \"enable_tuning_free_mm_pruning\": false, \"enable_tome_visual_merge\": false}",
+  "avg_visual_tokens_per_step": 68.5,
+  "avg_memory_tokens_per_step": 48.09675190048376,
+  "avg_total_tokens_per_step": 252.2505183137526,
+  "token_reduction_ratio_vs_baseline": 0.27179870129350875,
+  "fps": 8.71946782347917,
+  "latency_ms_mean": 137.52704902353187,
+  "latency_ms_p50": 128.46408202312887,
+  "latency_ms_p95": 247.61334438808262,
+  "approx_tflops_per_step": 4.989240844927735,
+  "gpu_peak_allocated_mib": 17336.10595703125,
+  "gpu_peak_reserved_mib": 25672.0,
+  "gpu_device_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda_visible_devices": "0"
+}
