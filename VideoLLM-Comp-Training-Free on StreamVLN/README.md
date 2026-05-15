@@ -25,6 +25,8 @@ Core integration files:
 
 The overview table is in `results/autoregressive_overview.md`.
 
+The full teacher-forcing report is in `REPORT.md`, with archived TF240 summaries under `results/teacher_forcing/`.
+
 Raw summaries are under `results/autoregressive/`, one subfolder per method setting. Each subfolder keeps:
 
 - `summary.json`
@@ -37,3 +39,8 @@ The included plot is:
 ## Run Script
 
 `scripts/run_videollm_comp_training_free_ar_grid.sh` is a compact AR-only grid script for the five migrated methods. It expects the original StreamVLN project layout and uses `STREAMVLN_EXT_FLAGS` to choose the compressor configuration.
+
+The TF240 fixed-subset evaluation scripts are:
+
+- `scripts/run_90_phase0_prepare_fixed_eval_subsets.sh`
+- `scripts/run_130_training_free_full_tf_eval.py`

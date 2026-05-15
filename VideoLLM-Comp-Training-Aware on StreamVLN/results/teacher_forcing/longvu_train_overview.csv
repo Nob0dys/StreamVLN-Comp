@@ -1,0 +1,4 @@
+method,candidate,target_keep_ratio,actual_tokens_per_frame,actual_keep_ratio,status,train_loss,train_runtime_sec,train_steps_per_second,path
+longvu,longvu_keep_ratio_0_3_q49_d1_r2r5k,0.3,49,0.289941,ok,0.236841081738472,263.0726,3.801,/home/ubuntu/project/StreamVLN/experiments_ext/videollm_comp_training_aware_tf240_runs/20260508_204619_ta_tf240/train_longvu/checkpoints/longvu_keep_ratio_0_3_q49_d1_r2r5k
+longvu,longvu_keep_ratio_0_5_q81_d1_r2r5k,0.5,81,0.47929,ok,0.23514674258232116,326.098,3.067,/home/ubuntu/project/StreamVLN/experiments_ext/videollm_comp_training_aware_tf240_runs/20260508_204619_ta_tf240/train_longvu/checkpoints/longvu_keep_ratio_0_5_q81_d1_r2r5k
+longvu,longvu_keep_ratio_0_7_q121_d1_r2r5k,0.7,121,0.715976,ok,0.23191626274585725,388.7481,2.572,/home/ubuntu/project/StreamVLN/experiments_ext/videollm_comp_training_aware_tf240_runs/20260508_204619_ta_tf240/train_longvu/checkpoints/longvu_keep_ratio_0_7_q121_d1_r2r5k

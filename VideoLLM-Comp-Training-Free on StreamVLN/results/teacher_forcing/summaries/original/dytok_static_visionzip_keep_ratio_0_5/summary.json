@@ -1,0 +1,41 @@
+{
+  "metric": "offline_action_micro_accuracy_min_len_teacher_forcing",
+  "eval_protocol": "aurora_replay_gt",
+  "eval_protocol_name": "AuroraReplay-GT",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/phase0_20260421_230201/teacher_forcing_240",
+  "num_episodes_eval": 240,
+  "num_episodes_error": 0,
+  "num_actions_compared": 16196,
+  "num_actions_correct": 5394,
+  "num_invalid_predictions": 7701,
+  "invalid_prediction_rate": 0.4754877747591998,
+  "overall_action_acc": 0.3330451963447765,
+  "per_class_action_acc": {
+    "0": 0.008333333333333333,
+    "1": 0.3297702979304071,
+    "2": 0.3695955369595537,
+    "3": 0.3262510483645513
+  },
+  "per_class_total": {
+    "0": 240,
+    "1": 8794,
+    "2": 3585,
+    "3": 3577
+  },
+  "elapsed_seconds": 2607.0962812900543,
+  "model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "token_pruning_flags": "{\"dytok_static_base_compressor\": \"visionzip\", \"dytok_static_min_ratio\": 0.3, \"dytok_static_upper_limit_ratio\": 0.5, \"enable_dynamic_memory\": false, \"enable_hc_st_pruning\": false, \"enable_memory_loss\": false, \"enable_multiscale_memory\": false, \"enable_sliding_kv\": false, \"enable_token_selection\": false, \"enable_tome_visual_merge\": false, \"enable_tuning_free_mm_pruning\": false, \"enable_video_token_compressor\": true, \"enable_voxel_proxy\": false, \"enable_voxel_rgbd\": false, \"video_token_compressor_type\": \"dytok_static\", \"video_token_target_keep_ratio\": 0.5, \"visionzip_score_type\": \"attn_proxy\"}",
+  "avg_visual_tokens_per_step": 49.0,
+  "avg_memory_tokens_per_step": 365.860212398123,
+  "avg_total_tokens_per_step": 907.063410718696,
+  "token_reduction_ratio_vs_baseline": 0.0,
+  "fps": 6.212275364063588,
+  "latency_ms_mean": 143.7971180437545,
+  "latency_ms_p50": 137.76814611628652,
+  "latency_ms_p95": 212.0691251475364,
+  "approx_tflops_per_step": 3.233815901777556,
+  "gpu_peak_allocated_mib": 17684.85009765625,
+  "gpu_peak_reserved_mib": 59160.0,
+  "gpu_device_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda_visible_devices": "1"
+}

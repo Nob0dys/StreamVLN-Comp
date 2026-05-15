@@ -1,0 +1,41 @@
+{
+  "metric": "offline_action_micro_accuracy_min_len_teacher_forcing",
+  "eval_protocol": "aurora_replay_gt",
+  "eval_protocol_name": "AuroraReplay-GT",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/phase0_20260421_230201/teacher_forcing_240",
+  "num_episodes_eval": 240,
+  "num_episodes_error": 0,
+  "num_actions_compared": 16196,
+  "num_actions_correct": 5253,
+  "num_invalid_predictions": 7808,
+  "invalid_prediction_rate": 0.4820943442825389,
+  "overall_action_acc": 0.3243393430476661,
+  "per_class_action_acc": {
+    "0": 0.0,
+    "1": 0.3189674778257903,
+    "2": 0.3397489539748954,
+    "3": 0.34386357282639085
+  },
+  "per_class_total": {
+    "0": 240,
+    "1": 8794,
+    "2": 3585,
+    "3": 3577
+  },
+  "elapsed_seconds": 2580.6655378341675,
+  "model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "token_pruning_flags": "{\"enable_dynamic_memory\": false, \"enable_hc_st_pruning\": false, \"enable_memory_loss\": false, \"enable_multiscale_memory\": false, \"enable_sliding_kv\": false, \"enable_token_selection\": false, \"enable_tome_visual_merge\": false, \"enable_tuning_free_mm_pruning\": false, \"enable_video_token_compressor\": true, \"enable_voxel_proxy\": false, \"enable_voxel_rgbd\": false, \"video_token_compressor_type\": \"visionzip\", \"video_token_target_keep_ratio\": 0.3, \"visionzip_contextual_num\": 6, \"visionzip_dominant_num\": 24, \"visionzip_score_type\": \"attn_proxy\"}",
+  "avg_visual_tokens_per_step": 15.0,
+  "avg_memory_tokens_per_step": 111.99802420350704,
+  "avg_total_tokens_per_step": 331.3390343294641,
+  "token_reduction_ratio_vs_baseline": 0.0,
+  "fps": 6.275900446050265,
+  "latency_ms_mean": 139.6181782124834,
+  "latency_ms_p50": 134.19175962917507,
+  "latency_ms_p95": 262.49123783782125,
+  "approx_tflops_per_step": 1.2447278942061863,
+  "gpu_peak_allocated_mib": 17684.84912109375,
+  "gpu_peak_reserved_mib": 18360.0,
+  "gpu_device_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda_visible_devices": "1"
+}

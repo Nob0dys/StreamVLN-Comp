@@ -1,15 +1,17 @@
 # VideoLLM-Comp Training-Aware on StreamVLN
 
-This folder is intentionally reserved.
+This folder contains the StreamVLN training-aware and training-adapted compression experiments summarized in `REPORT.md`.
 
-The current migrated StreamVLN upload contains the practical training-free VideoLLM-Comp variants:
+## Methods
 
-- `VisionZip`
-- `PruneVid`
-- `DyToK (static)`
-- `FastVID`
-- `VQToken` with `use_cross_attention=false`
+- `LLaMAVID`: trainable query-based compressor.
+- `LongVU`: trainable query-based compressor with optional DINO features.
+- `FastVid-SFT-LoRA`: training-free FastVid compression adapted with LoRA SFT.
 
-Heavier VideoLLM-Comp-style variants such as `LongVU`, `LLaMAVID`, and cross-attention-style `VQToken` are not included here because they were not part of the completed StreamVLN migration in the current report. They require additional model-side integration or learned components before a clean upload.
+## Contents
 
-The internal recovery method `f2_warmup_eval_target_hw7` is not a VideoLLM-Comp method, so it is placed under `Others`.
+- `REPORT.md`: full experiment report copied from the cleaned StreamVLN workspace.
+- `code/streamvln_ext/`: StreamVLN extension code used by the training-aware and FastVid-SFT-LoRA runs.
+- `scripts/`: fixed-subset preparation, training, TF240 eval, and FastVid LoRA SFT scripts.
+- `results/teacher_forcing/`: lightweight overviews, validation summary, and archived summary JSON files.
+- `assets/plots/`: exported figures referenced by the report.

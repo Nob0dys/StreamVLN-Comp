@@ -1,0 +1,20 @@
+{
+  "plan": "sanity_size",
+  "model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "base_model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/phase0_20260421_230201/teacher_forcing_240",
+  "baseline_tokens": 1736.783835514942,
+  "num_history": 8,
+  "model_max_length": 4096,
+  "max_episodes": 0,
+  "sanity_episodes": 10,
+  "aurora_decode_max_new_tokens": 1,
+  "aurora_batch_size": 1,
+  "aurora_step_mode": "next_token_logits",
+  "aurora_vision_batch_size": 16,
+  "aurora_precompute_vision": true,
+  "gpus": [
+    "0",
+    "1"
+  ]
+}

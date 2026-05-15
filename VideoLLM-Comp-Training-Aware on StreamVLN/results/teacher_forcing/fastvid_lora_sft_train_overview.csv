@@ -1,0 +1,4 @@
+candidate,target_keep_ratio,status,exit_code,final_train_loss,train_runtime_sec,train_steps_per_second,checkpoint_path,flags_path
+fastvid_keep_ratio_0_3,0.3,reused,0,0.18017610096931458,1348.9589,0.741,/home/ubuntu/model/StreamVLN_fastvid_lora_sft_r2r5k_20260509_133700/fastvid_keep_ratio_0_3,/home/ubuntu/model/StreamVLN_fastvid_lora_sft_r2r5k_20260509_133700/fastvid_keep_ratio_0_3/flags.json
+fastvid_keep_ratio_0_5,0.5,reused,0,0.16980251681804656,1763.7667,0.567,/home/ubuntu/model/StreamVLN_fastvid_lora_sft_r2r5k_20260509_133700/fastvid_keep_ratio_0_5,/home/ubuntu/model/StreamVLN_fastvid_lora_sft_r2r5k_20260509_133700/fastvid_keep_ratio_0_5/flags.json
+fastvid_keep_ratio_0_7,0.7,reused,0,0.1570302996635437,2135.3407,0.468,/home/ubuntu/model/StreamVLN_fastvid_lora_sft_r2r5k_20260509_133700/fastvid_keep_ratio_0_7,/home/ubuntu/model/StreamVLN_fastvid_lora_sft_r2r5k_20260509_133700/fastvid_keep_ratio_0_7/flags.json

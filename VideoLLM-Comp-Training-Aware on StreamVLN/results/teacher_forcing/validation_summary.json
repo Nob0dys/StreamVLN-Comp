@@ -1,0 +1,14 @@
+{
+  "master_root": "/home/ubuntu/project/StreamVLN/experiments_ext/videollm_comp_training_aware_tf240_runs/20260508_204619_ta_tf240",
+  "baseline_summary": "/home/ubuntu/project/StreamVLN/experiments_ext/videollm_comp_full_eval_tf_runs/20260507_fixed_tf240_aurora_promptfix/baseline/summary.json",
+  "num_eval_rows": 6,
+  "all_eval_acceptance_ok": true,
+  "best_candidate": "llamavid_keep_ratio_0_5_q32_grid9_r2r5k",
+  "best_acc": 0.47764880217337613,
+  "best_token_reduction_ratio": 0.5557312108794957,
+  "notes": [
+    "Final eval uses next_token_logits with max_new_tokens=1 and aurora_precompute_vision=1.",
+    "Training-aware precompute path was patched to pass raw vision features/current images to compressors.",
+    "Earlier generate+16 and precompute-without-raw debug runs are excluded from leaderboard."
+  ]
+}

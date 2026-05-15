@@ -1,0 +1,41 @@
+{
+  "metric": "offline_action_micro_accuracy_min_len_teacher_forcing",
+  "eval_protocol": "aurora_replay_gt",
+  "eval_protocol_name": "AuroraReplay-GT",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/phase0_20260421_230201/teacher_forcing_240",
+  "num_episodes_eval": 240,
+  "num_episodes_error": 0,
+  "num_actions_compared": 16196,
+  "num_actions_correct": 5446,
+  "num_invalid_predictions": 7779,
+  "invalid_prediction_rate": 0.4803037787107928,
+  "overall_action_acc": 0.3362558656458385,
+  "per_class_action_acc": {
+    "0": 0.07916666666666666,
+    "1": 0.34637252672276553,
+    "2": 0.35313807531380753,
+    "3": 0.311713726586525
+  },
+  "per_class_total": {
+    "0": 240,
+    "1": 8794,
+    "2": 3585,
+    "3": 3577
+  },
+  "elapsed_seconds": 1754.9440469741821,
+  "model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "token_pruning_flags": "{\"enable_dynamic_memory\": false, \"enable_hc_st_pruning\": false, \"enable_memory_loss\": false, \"enable_multiscale_memory\": false, \"enable_sliding_kv\": false, \"enable_token_selection\": false, \"enable_tome_visual_merge\": false, \"enable_tuning_free_mm_pruning\": false, \"enable_video_token_compressor\": false, \"enable_voxel_proxy\": false, \"enable_voxel_rgbd\": false}",
+  "avg_visual_tokens_per_step": 98.0,
+  "avg_memory_tokens_per_step": 731.720424796246,
+  "avg_total_tokens_per_step": 1736.783835514942,
+  "token_reduction_ratio_vs_baseline": 0.0,
+  "fps": 9.22878426119888,
+  "latency_ms_mean": 96.92898740574822,
+  "latency_ms_p50": 100.47107352875173,
+  "latency_ms_p95": 105.69717676844448,
+  "approx_tflops_per_step": 6.586417078822374,
+  "gpu_peak_allocated_mib": 18651.833984375,
+  "gpu_peak_reserved_mib": 96320.0,
+  "gpu_device_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda_visible_devices": "0"
+}

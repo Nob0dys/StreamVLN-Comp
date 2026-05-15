@@ -1,0 +1,41 @@
+{
+  "metric": "offline_action_micro_accuracy_min_len_teacher_forcing",
+  "eval_protocol": "aurora_replay_gt",
+  "eval_protocol_name": "AuroraReplay-GT",
+  "dataset_root": "/home/ubuntu/project/StreamVLN/experiments_ext/fixed_eval_subsets/phase0_20260421_230201/teacher_forcing_240",
+  "num_episodes_eval": 240,
+  "num_episodes_error": 0,
+  "num_actions_compared": 16196,
+  "num_actions_correct": 5088,
+  "num_invalid_predictions": 8011,
+  "invalid_prediction_rate": 0.49462830328476165,
+  "overall_action_acc": 0.31415164238083476,
+  "per_class_action_acc": {
+    "0": 0.0,
+    "1": 0.31123493290880144,
+    "2": 0.3163179916317992,
+    "3": 0.34022924238188423
+  },
+  "per_class_total": {
+    "0": 240,
+    "1": 8794,
+    "2": 3585,
+    "3": 3577
+  },
+  "elapsed_seconds": 3496.5612161159515,
+  "model_path": "/home/ubuntu/model/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "token_pruning_flags": "{\"enable_dynamic_memory\": false, \"enable_hc_st_pruning\": false, \"enable_memory_loss\": false, \"enable_multiscale_memory\": false, \"enable_sliding_kv\": false, \"enable_token_selection\": false, \"enable_tome_visual_merge\": false, \"enable_tuning_free_mm_pruning\": false, \"enable_video_token_compressor\": true, \"enable_voxel_proxy\": false, \"enable_voxel_rgbd\": false, \"prunevid_cluster_ratio\": 0.3, \"prunevid_k\": 7, \"prunevid_min_tokens_for_cluster\": 14, \"prunevid_tau\": 0.7, \"prunevid_temporal_ratio\": 0.5, \"video_token_compressor_type\": \"prunevid\", \"video_token_target_keep_ratio\": 0.15}",
+  "avg_visual_tokens_per_step": 29.0,
+  "avg_memory_tokens_per_step": 202.16216967152383,
+  "avg_total_tokens_per_step": 539.6673252654977,
+  "token_reduction_ratio_vs_baseline": 0.0,
+  "fps": 4.631979536165774,
+  "latency_ms_mean": 190.67277224556395,
+  "latency_ms_p50": 189.78645210154355,
+  "latency_ms_p95": 277.37369772512466,
+  "approx_tflops_per_step": 1.9339435365547566,
+  "gpu_peak_allocated_mib": 17684.853515625,
+  "gpu_peak_reserved_mib": 18364.0,
+  "gpu_device_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "cuda_visible_devices": "0"
+}
